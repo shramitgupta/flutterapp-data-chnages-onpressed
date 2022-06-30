@@ -20,13 +20,16 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            RaisedButton(
-              onPressed: () {
-                setState(() {
-                  _word = 'Many more to come';
-                });
-              },
-              child: Text('Change Text'),
+            Center(
+              child: RaisedButton(
+                onPressed: () {
+                  setState(() {
+                    _word = 'Many more to come';
+                  });
+                },
+                child: Text('Change Text'),
+                color: Colors.blue,
+              ),
             ),
             Text(_word),
           ],
